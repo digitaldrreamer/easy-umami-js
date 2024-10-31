@@ -77,8 +77,8 @@ import UmamiClient from './umami.js'; // Path to your umami.js file
 
 const client = new UmamiClient({
   baseUrl: 'https://your-umami-instance.com', // Your Umami instance URL (no trailing slash)
-  username: 'your-username',  // Default admin username
-  password: 'your-password'   // Default admin password
+  username: 'your-username',  // superadmin username
+  password: 'your-password'   // superadmin password
 });
 ```
 
