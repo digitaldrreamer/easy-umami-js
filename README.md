@@ -186,7 +186,7 @@ client.sendEvent({
 
 ## Type Definitions
 
-Refer to the JSDoc typedefs within the `umami.js` file for detailed information on the structure of objects like `User`, `GetTokenResponse`, `EventPayload`, `Session`, `SessionStats`, `SessionActivity`, `SessionProperty`, `PropertyCount`, and `PropertyValue`.  These definitions provide clear documentation of the expected data structures for requests and responses. There's an documentation generated with jsdoc2m [here](./DOCS.md)
+Refer to the JSDoc typedefs within the `umami.js` file for detailed information on the structure of objects like `User`, `GetTokenResponse`, `EventPayload`, `Session`, `SessionStats`, `SessionActivity`, `SessionProperty`, `PropertyCount`, and `PropertyValue`.  These definitions provide clear documentation of the expected data structures for requests and responses. There's an documentation generated with jsdoc2md [here](./DOCS.md)
 
 
 ---
