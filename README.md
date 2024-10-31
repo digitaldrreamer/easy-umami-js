@@ -1,9 +1,11 @@
 # UmamiClient 
 > Note: For self-hosted instances only. Use the [Official Umami API Client](https://github.com/umami-software/api-client/) for umami cloud.
 
+> Generated with ChatGPT. Forgive any mistakes.
+
 The `UmamiClient` is a JavaScript (JsDoc) class for interacting with the [Umami Analytics API](https://umami.is/docs/api), providing easy access to user authentication, session management, analytics data, and event tracking. This client helps streamline fetching statistics, sessions, and events from Umami for use in applications or reporting. The class itself is found in the `umami.js` file.
 
-I made this for a project after I got tired of how poorly maintained the umami js client was (bless their hearts). It's an incredible (FREE!!!) software with a relatively poor library.
+This is not a library. It's just a simple class. I made this for a project after I felt the @umami/api-client's documentation was not clear enough, and it didn't seem to be updated, so I was unable to use it. Don't get me wrong. Umami is an incredible (and free!) tool, but I found its JavaScript client didn’t meet all my needs
 
 The `UmamiClient` class has several well-designed features that enhance usability and reliability for interacting with the Umami API. Here are some key aspects:
 
