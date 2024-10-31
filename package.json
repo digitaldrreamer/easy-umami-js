@@ -1,6 +1,6 @@
 {
   "name": "easy-umami-js",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "main": "umami.js",
   "type": "module",
   "description": "A JavaScript client for interacting with the Umami analytics API.",
