@@ -64,7 +64,7 @@ Install `UmamiClient` by copying the class into your codebase or adding it as a 
 ### Basic Setup
 To start using the `UmamiClient`, create a new instance with your `baseUrl`, `username`, and `password`.
 
-- Your baseUrl is `<yourUmamiInstanceUrl>/api`.
+- Your baseUrl is `<yourUmamiInstanceUrl>` (no trailing slash)
 - Your username is the default (super)admin username (you first created)
 - Your username is the default (super)admin password (you first created)
 
@@ -72,7 +72,7 @@ To start using the `UmamiClient`, create a new instance with your `baseUrl`, `us
 import UmamiClient from './UmamiClient.js';
 
 const client = new UmamiClient({
-  baseUrl: 'https://your-umami-api.com/api',
+  baseUrl: 'https://your-umami-instance.com',
   username: 'your-username',
   password: 'your-password'
 });

@@ -185,6 +185,7 @@ class UmamiClient {
         }
 
         const data = await response.json();
+        console.log(data)
         this.token = data.token;
         this.tokenExpiry = Date.now() + (24 * 60 * 60 * 1000); // Set expiry to 24 hours from now
         return data;
