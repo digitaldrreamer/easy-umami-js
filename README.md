@@ -3,9 +3,11 @@
 
 > Documentation generated with the assistance of ChatGPT. Please report any inaccuracies.
 
-The `UmamiClient` is a JavaScript class designed to simplify interaction with the [Umami Analytics API](https://umami.is/docs/api). It provides methods for user authentication, website management, session analysis, event tracking, and data retrieval. This client streamlines the process of fetching statistics, sessions, and events from a self-hosted Umami instance for use in applications or reporting dashboards.  The class definition resides in the `umami.js` file.
+The `UmamiClient` is a JavaScript ~class~ library designed to simplify interaction with the [Umami Analytics API](https://umami.is/docs/api). It provides methods for user authentication, website management, session analysis, event tracking, and data retrieval. This ~client~ library streamlines the process of fetching statistics, sessions, and events from a self-hosted Umami instance for use in applications or reporting dashboards.  ~The class definition resides in the `umami.js` file.~ 
 
-This is not a published library; it's a standalone class intended for direct integration into projects. It was developed to address specific needs and provide clearer documentation compared to the existing `@umami/api-client`.
+## [FULL DOCUMENTATION](./DOCS.md)
+
+~This is not a published library; it's a standalone class intended for direct integration into projects.~ This is now a published library. It was developed to address specific needs and provide clearer documentation compared to the existing `@umami/api-client`.
 
 ## Key Features of UmamiClient
 
@@ -68,12 +70,26 @@ This is not a published library; it's a standalone class intended for direct int
 
 ### Installation
 
-Copy the `UmamiClient` class from `umami.js` into your project or include it as a module.
+```bash
+npm install easy-umami-js
+```
 
 ### Basic Setup
 
+#### ES6 Import
 ```javascript
-import UmamiClient from './umami.js'; // Path to your umami.js file
+import UmamiClient from 'easy-umami-js'; 
+
+const client = new UmamiClient({
+  baseUrl: 'https://your-umami-instance.com', // Your Umami instance URL (no trailing slash)
+  username: 'your-username',  // superadmin username
+  password: 'your-password'   // superadmin password
+});
+```
+
+#### CJS
+```javascript
+const UmamiClient = require('easy-umami-js');
 
 const client = new UmamiClient({
   baseUrl: 'https://your-umami-instance.com', // Your Umami instance URL (no trailing slash)

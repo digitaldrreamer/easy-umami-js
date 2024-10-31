@@ -1,5 +1,22 @@
 {
+  "name": "easy-umami-js",
+  "version": "0.7.0",
+  "main": "umami.js",
+  "type": "module",
+  "description": "A JavaScript client for interacting with the Umami analytics API.",
+  "keywords": ["umami", "analytics", "api", "client"],
+  "author": "digitaldrreamer",
+  "license": "MIT",
   "devDependencies": {
     "jsdoc-to-markdown": "^9.0.4"
-  }
+  },
+  "exports": {
+    "require": "./umami.cjs.js",
+    "import": "./umami.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/digitaldrreamer/easy-umami-js.git"
+  },
+  "homepage": "https://github.com/digitaldrreamer/easy-umami-js#readme"
 }
