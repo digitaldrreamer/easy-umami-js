@@ -9,6 +9,18 @@ The `UmamiClient` is a JavaScript ~class~ library designed to simplify interacti
 
 ~This is not a published library; it's a standalone class intended for direct integration into projects.~ This is now a published library. It was developed to address specific needs and provide clearer documentation compared to the existing `@umami/api-client`.
 
+## Table of Contents
+- [Key Features](#key-features-of-umamiclient)
+- [Getting Started](#getting-started)
+- [Authentication](#authentication)
+- [User Management](#user-management)
+- [Team Management](#team-management)
+- [Website Management](#website-management)
+- [Session Analysis](#session-analysis)
+- [Event Tracking and Data Retrieval](#event-tracking-and-data-retrieval)
+- [Examples](#examples)
+- [Type Definitions](#type-definitions)
+
 ## Key Features of UmamiClient
 
 ### 1. Automatic Authentication and Token Management
@@ -52,18 +64,6 @@ The `UmamiClient` is a JavaScript ~class~ library designed to simplify interacti
 ### 7. Typed Responses with JSDoc
 
 - Methods return specific data structures (e.g., `Session`, `SessionStats`, `PropertyCount`) or pagination information for predictable and easy-to-use responses.  These types are documented using JSDoc typedefs.
-
-## Table of Contents
-
-- [Getting Started](#getting-started)
-- [Authentication](#authentication)
-- [User Management](#user-management)
-- [Team Management](#team-management)
-- [Website Management](#website-management)
-- [Session Analysis](#session-analysis)
-- [Event Tracking and Data Retrieval](#event-tracking-and-data-retrieval)
-- [Examples](#examples)
-- [Type Definitions](#type-definitions)
 
 
 ## Getting Started
@@ -208,3 +208,9 @@ Refer to the JSDoc typedefs within the `umami.js` file for detailed information 
 ---
 
 For complete API details and query parameter options, refer to the official [Umami Analytics API Documentation](https://umami.is/docs/api).
+
+## TODO to v1:
+- [ ] Test all the endpoints
+- [ ] Add [`async-retry`](https://www.npmjs.com/package/async-retry) and add a `retries` parameter to class config and individual methods.
+- [ ] Add a `timeout` parameter to class config and individual methods.
+- [ ] Allow passing the `opts` type directly to class config and individual methods.
